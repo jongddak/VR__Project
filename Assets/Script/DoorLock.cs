@@ -39,7 +39,7 @@ public class DoorLock : MonoBehaviour
        
     }
 
-    public void Handlehinge() //핸들로 열 때 
+    public void Handlehinge() //핸들로 열 때 , 부모의 스케일에 영향을 받아서 모양이 이상해짐 , 일단 보류 !
     {
         joint = Door.GetComponent<HingeJoint>();
         joint.limits = limits;
