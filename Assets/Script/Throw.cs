@@ -8,14 +8,18 @@ public class Throw : MonoBehaviour
     [SerializeField] Rigidbody body;
     [SerializeField] AudioSource audioSource;
 
+    [SerializeField] GameObject prefab;
+
 
     private void OnCollisionEnter(Collision collision)
     {
         if (body.velocity.magnitude > 2f) 
         {
+            GameObject obj = Instantiate(prefab, transform.position, transform.rotation);
             // 家府 犁积 
             Debug.Log("家府犁积!");
             audioSource.Play();
+            Destroy(obj,1f);
             Destroy(gameObject, 3f);
         }
     }
