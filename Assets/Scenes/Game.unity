@@ -9186,12 +9186,12 @@ PrefabInstance:
     - target: {fileID: 136805344647501953, guid: 82c5c237a660ef344a39d69bbfe48200,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.241
+      value: 0.595
       objectReference: {fileID: 0}
     - target: {fileID: 136805344647501953, guid: 82c5c237a660ef344a39d69bbfe48200,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.09
+      value: -0.397
       objectReference: {fileID: 0}
     - target: {fileID: 462333344766138627, guid: 82c5c237a660ef344a39d69bbfe48200,
         type: 3}
@@ -9321,7 +9321,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9403,6 +9403,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1263045572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263045562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c253651d918d21438660f66983f283d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 1263045564}
 --- !u!1001 &1273539567
 PrefabInstance:
   m_ObjectHideFlags: 0
