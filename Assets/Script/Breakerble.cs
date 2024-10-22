@@ -25,7 +25,7 @@ public class Breakerble : MonoBehaviour
         
         if (collision.gameObject.name == "Axe") 
         {
-            if (rb.velocity.magnitude > 7)
+            if (rb.velocity.magnitude > 4f)
             {
                 curCount++;
                 Debug.Log("도끼로 맞음");

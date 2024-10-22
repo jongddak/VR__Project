@@ -38,13 +38,15 @@ public class WalkSound : MonoBehaviour
 
     IEnumerator createSoundobj() 
     {
-        WaitForSeconds time = new WaitForSeconds(0.5f);
+        WaitForSeconds time = new WaitForSeconds(0.3f);
 
         while (true) 
         {
             yield return time;
 
-            Instantiate(prefap, curPos, transform.rotation);
+            GameObject obj =  Instantiate(prefap, curPos, transform.rotation);
+            Destroy(obj,3f);
+
         }
     }
 }
